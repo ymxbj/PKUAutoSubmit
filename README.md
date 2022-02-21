@@ -10,6 +10,9 @@ PKU一键出入校备案小工具 v3.2 (2021.11.15)
 -  最新版本 `selenium` 已停止对 `PhantomJS` 的支持， `2.48.0` 及 `3.8.0` 版本测试正常，参考[#35](https://github.com/Bruuuuuuce/PKUAutoSubmit/issues/35)
 -  发行版 `v3.0` 可能出现登录问题，请采用最新 repo 或发行版，参考[#35](https://github.com/Bruuuuuuce/PKUAutoSubmit/issues/35)
 
+**已解决**：
+- 针对第一条问题：在运行上游仓库代码时，由于PhantomJs和Chrome版本的问题，无法登录门户，故需要自行下载[chromedriver](https://chromedriver.chromium.org/downloads)，请根据自身Chrome的版本下载对应的chromedriver。下载后放入chromedriver/bin目录下，再按照[PR#40](https://github.com/Bruuuuuuce/PKUAutoSubmit/pull/40#issuecomment-998795340)中取消注释main.py中的相应代码即可。
+
 ### 感谢同学们的支持，祝大家一切顺利，学业有成！
 
 为作者的第一个 `selenium` 练手小项目，完善程度较低，欢迎任意类型的使用与开发改进
